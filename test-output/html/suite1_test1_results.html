@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Passed tests</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>Passed tests</h1>
+<p>
+  Test duration: 0,706s
+</p>
+
+
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">MailTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  deleteMailWithExistId
+      </td>
+  <td class="duration">
+    0,352s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        doDelete method started<br />
+                                Setting accept &apos;application/json&apos;<br />
+                                Response: DELETE http://localhost:8080/rest/service/mails/9 returned a response status of 200 OK<br />
+                                Response is null: false<br />
+                                Verification if equal. Actual=[{&quot;Message&quot;:&quot;Mail was deleted successfully&quot;}] expected[{&quot;Message&quot;:&quot;Mail was deleted successfully&quot;}] is = true<br />
+                                Adding deleted mail<br />
+                                doPost method started<br />
+                                Setting accept &apos;application/json&apos;<br />
+                                Response: POST http://localhost:8080/rest/service/mails/9 returned a response status of 200 OK<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  deleteMailWithNotExistId
+      </td>
+  <td class="duration">
+    0,029s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        doDelete method started<br />
+                                Setting accept &apos;application/json&apos;<br />
+                                Response: DELETE http://localhost:8080/rest/service/mails/666 returned a response status of 200 OK<br />
+                                Response is null: false<br />
+                                Verification if equal. Actual=[{&quot;Message&quot;:&quot;Mailwasnotfound&quot;,&quot;Title&quot;:&quot;Failure&quot;,&quot;Code&quot;:&quot;204-NoContent&quot;}] expected[{&quot;Message&quot;:&quot;Mailwasnotfound&quot;,&quot;Title&quot;:&quot;Failure&quot;,&quot;Code&quot;:&quot;204-NoContent&quot;}] is = true<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  getMailById
+      </td>
+  <td class="duration">
+    0,058s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        doGet method started<br />
+                                Setting accept &apos;application/json&apos;<br />
+                                Response: GET http://localhost:8080/rest/service/mails/2 returned a response status of 200 OK<br />
+                                Response is null: false<br />
+                                Verification if equal. Actual=[model.Mail@eafe2ca5] expected[model.Mail@eafe2ca5] is = true<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  getMailsByEmail
+      </td>
+  <td class="duration">
+    0,032s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        doGet method started<br />
+                                Setting accept &apos;application/json&apos;<br />
+                                Response: GET http://localhost:8080/rest/service/mails/paramsEmail?from=hnatko2@gmail.com returned a response status of 200 OK<br />
+                                Response is null: false<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  getMailsBySubject
+      </td>
+  <td class="duration">
+    0,018s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        doGet method started<br />
+                                Setting accept &apos;application/json&apos;<br />
+                                Response: GET http://localhost:8080/rest/service/mails/paramsSubject?subject=Subject2 returned a response status of 200 OK<br />
+                                Response is null: false<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  getMailsTest
+      </td>
+  <td class="duration">
+    0,052s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        doGet method started<br />
+                                Setting accept &apos;application/json&apos;<br />
+                                Response: GET http://localhost:8080/rest/service/mails returned a response status of 200 OK<br />
+                                Response is null: false<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  getMailsWithoutRightParamTest
+      </td>
+  <td class="duration">
+    0,019s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        doGet method started<br />
+                                Setting accept &apos;application/json&apos;<br />
+                                Response: GET http://localhost:8080/rest/service/mails//paramsSubject? returned a response status of 200 OK<br />
+                                Response is null: false<br />
+                                Verification if equal. Actual=[{&quot;Message&quot;:&quot;HTTP404NotFound&quot;,&quot;Title&quot;:&quot;Failure&quot;}] expected[{&quot;Message&quot;:&quot;HTTP404NotFound&quot;,&quot;Title&quot;:&quot;Failure&quot;}] is = true<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  getUnexistingMail
+      </td>
+  <td class="duration">
+    0,059s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        doGet method started<br />
+                                Setting accept &apos;application/json&apos;<br />
+                                Response: GET http://localhost:8080/rest/service/mails/16 returned a response status of 200 OK<br />
+                                Response is null: false<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  postMailWithExistId
+      </td>
+  <td class="duration">
+    0,031s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        doPost method started<br />
+                                Setting accept &apos;application/json&apos;<br />
+                                Response: POST http://localhost:8080/rest/service/mails returned a response status of 200 OK<br />
+                                doGet method started<br />
+                                Setting accept &apos;application/json&apos;<br />
+                                Response: GET http://localhost:8080/rest/service/mails/1 returned a response status of 200 OK<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  postMailWithNotExistId
+      </td>
+  <td class="duration">
+    0,056s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        doPost method started<br />
+                                Setting accept &apos;application/json&apos;<br />
+                                Response: POST http://localhost:8080/rest/service/mails/102 returned a response status of 200 OK<br />
+                                doGet method started<br />
+                                Setting accept &apos;application/json&apos;<br />
+                                Response: GET http://localhost:8080/rest/service/mails/102 returned a response status of 200 OK<br />
+                                Response is null: false<br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

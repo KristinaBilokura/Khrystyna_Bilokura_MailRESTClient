@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Log Output</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+  </head>
+<body>
+  <h1>Log Output</h1>
+  <p>
+    Combined output from all calls to the log methods of the <a href="http://testng.org/javadocs/org/testng/Reporter.html">TestNG Reporter</a>.    
+  </p>
+
+  <div id="log">
+                  doDelete method started<br />
+                        Setting accept &apos;application/json&apos;<br />
+                        Response: DELETE http://localhost:8080/rest/service/mails/9 returned a response status of 200 OK<br />
+                        Response is null: false<br />
+                        Verification if equal. Actual=[{&quot;Message&quot;:&quot;Mail was deleted successfully&quot;}] expected[{&quot;Message&quot;:&quot;Mail was deleted successfully&quot;}] is = true<br />
+                        Adding deleted mail<br />
+                        doPost method started<br />
+                        Setting accept &apos;application/json&apos;<br />
+                        Response: POST http://localhost:8080/rest/service/mails/9 returned a response status of 200 OK<br />
+                        doDelete method started<br />
+                        Setting accept &apos;application/json&apos;<br />
+                        Response: DELETE http://localhost:8080/rest/service/mails/666 returned a response status of 200 OK<br />
+                        Response is null: false<br />
+                        Verification if equal. Actual=[{&quot;Message&quot;:&quot;Mailwasnotfound&quot;,&quot;Title&quot;:&quot;Failure&quot;,&quot;Code&quot;:&quot;204-NoContent&quot;}] expected[{&quot;Message&quot;:&quot;Mailwasnotfound&quot;,&quot;Title&quot;:&quot;Failure&quot;,&quot;Code&quot;:&quot;204-NoContent&quot;}] is = true<br />
+                        doGet method started<br />
+                        Setting accept &apos;application/json&apos;<br />
+                        Response: GET http://localhost:8080/rest/service/mails/2 returned a response status of 200 OK<br />
+                        Response is null: false<br />
+                        Verification if equal. Actual=[model.Mail@eafe2ca5] expected[model.Mail@eafe2ca5] is = true<br />
+                        doGet method started<br />
+                        Setting accept &apos;application/json&apos;<br />
+                        Response: GET http://localhost:8080/rest/service/mails/paramsEmail?from=hnatko2@gmail.com returned a response status of 200 OK<br />
+                        Response is null: false<br />
+                        doGet method started<br />
+                        Setting accept &apos;application/json&apos;<br />
+                        Response: GET http://localhost:8080/rest/service/mails/paramsSubject?subject=Subject2 returned a response status of 200 OK<br />
+                        Response is null: false<br />
+                        doGet method started<br />
+                        Setting accept &apos;application/json&apos;<br />
+                        Response: GET http://localhost:8080/rest/service/mails returned a response status of 200 OK<br />
+                        Response is null: false<br />
+                        doGet method started<br />
+                        Setting accept &apos;application/json&apos;<br />
+                        Response: GET http://localhost:8080/rest/service/mails//paramsSubject? returned a response status of 200 OK<br />
+                        Response is null: false<br />
+                        Verification if equal. Actual=[{&quot;Message&quot;:&quot;HTTP404NotFound&quot;,&quot;Title&quot;:&quot;Failure&quot;}] expected[{&quot;Message&quot;:&quot;HTTP404NotFound&quot;,&quot;Title&quot;:&quot;Failure&quot;}] is = true<br />
+                        doGet method started<br />
+                        Setting accept &apos;application/json&apos;<br />
+                        Response: GET http://localhost:8080/rest/service/mails/16 returned a response status of 200 OK<br />
+                        Response is null: false<br />
+                        doPost method started<br />
+                        Setting accept &apos;application/json&apos;<br />
+                        Response: POST http://localhost:8080/rest/service/mails returned a response status of 200 OK<br />
+                        doGet method started<br />
+                        Setting accept &apos;application/json&apos;<br />
+                        Response: GET http://localhost:8080/rest/service/mails/1 returned a response status of 200 OK<br />
+                        doPost method started<br />
+                        Setting accept &apos;application/json&apos;<br />
+                        Response: POST http://localhost:8080/rest/service/mails/102 returned a response status of 200 OK<br />
+                        doGet method started<br />
+                        Setting accept &apos;application/json&apos;<br />
+                        Response: GET http://localhost:8080/rest/service/mails/102 returned a response status of 200 OK<br />
+                        Response is null: false<br />
+            </div>
+
+</body>
+</html>

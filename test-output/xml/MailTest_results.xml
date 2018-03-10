@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Passed tests"
+           tests="10"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0,706">
+  <properties />
+  
+  
+            <testcase name="postMailWithNotExistId" time="0,056" classname="MailTest" />
+                <testcase name="getMailById" time="0,058" classname="MailTest" />
+                <testcase name="getMailsBySubject" time="0,018" classname="MailTest" />
+                <testcase name="deleteMailWithNotExistId" time="0,029" classname="MailTest" />
+                <testcase name="getMailsWithoutRightParamTest" time="0,019" classname="MailTest" />
+                <testcase name="getUnexistingMail" time="0,059" classname="MailTest" />
+                <testcase name="postMailWithExistId" time="0,031" classname="MailTest" />
+                <testcase name="getMailsByEmail" time="0,032" classname="MailTest" />
+                <testcase name="getMailsTest" time="0,052" classname="MailTest" />
+                <testcase name="deleteMailWithExistId" time="0,352" classname="MailTest" />
+      
+</testsuite>
